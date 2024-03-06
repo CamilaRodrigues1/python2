@@ -1,5 +1,5 @@
 nome = str(input('O seu nome completo: '))
-print(f'O seu maiúsculo é {nome.upper()}.')
-print(f'O seu minúsculo é {nome.lower()}.')
+print(f'O seu nome maiúsculo é {nome.upper()}.')
+print(f'O seu nome minúsculo é {nome.lower()}.')
 print(f'O seu nome tem {len(nome) - nome.count(' ')} letras.')
 print(f'O seu 1° {nome.split()[0].upper()} tem {nome.find(' ')} letras.')
