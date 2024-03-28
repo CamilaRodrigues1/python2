@@ -1,11 +1,20 @@
-num = int(input('quantos termos voce quer mostrar?  '))
-f1 = 0
-f2 = 1
-print('='*30)
-print(f'{f1}->{f2}', end='')
-cont = 3
-while cont <= num:
-    f3 = f1 + f2
-    print(f'{f3}->', end='')
+cont = soma = maior = menor = media = 0
+resp = 'Ss'
+while resp in 'Ss':
+    num = int(input('Digite um numero: '))
+    soma += num
     cont += 1
-print(' acabou......')
+    if cont == 1:
+        maior = menor = num
+    else:
+        if num > maior:
+            maior = num
+        elif num < menor:
+            menor = num
+    resp = str(input('quer continuar? [S/N] ')).strip().upper()[0]
+media = soma / cont
+print(f'''voce digitou {cont} números 
+a soma de todos ele é {soma}
+e a media é de {media:2}
+e o numero maior é {maior} e o numero menor é {menor}''')
+
