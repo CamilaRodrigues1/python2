@@ -24,8 +24,12 @@ while resp != 5:
             maior = num2
         print('=-' * 30)
         print(f'O numero {maior} é maior')
-        print('=-'*30)
+        print('=-' * 30)
     elif resp == 4:
         num1 = int(input('Primeiro valor: '))
         num2 = int(input('Segundo valor: '))
+    else:
+        print('=-' * 30)
+        print('opção invalida..')
+        print('=-' * 30)
 print('fim do programa')
